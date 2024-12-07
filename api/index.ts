@@ -16,8 +16,8 @@ app.get("/get-directions", async (req, res) =>{
     const url = "https://naveropenapi.apigw.ntruss.com/map-direction/v1/driving";
 
     const headers = {
-        "X-NCP-APIGW-API-KEY-ID": process.env.NAVER_CLIENT_ID,
-        "X-NCP-APIGW-API-KEY": process.env.NAVER_CLIENT_SECRET,
+        "x-ncp-apigw-api-key-id": process.env.NAVER_CLIENT_ID,
+        "x-ncp-apigw-api-key": process.env.NAVER_CLIENT_SECRET,
     };
 
     console.log("Request URL:", url);
